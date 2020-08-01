@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="JavaCode" />
         <module name="LeetcodeAlgo" />
         <module name="JavaPractive" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
+      <module name="JavaCode" target="1.5" />
       <module name="LeetcodeAlgo" target="1.11" />
     </bytecodeTargetLevel>
   </component>
