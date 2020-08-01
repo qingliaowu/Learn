@@ -2,6 +2,8 @@ package TwoSum;
 
 import java.util.Arrays;
 
+//https://leetcode.com/problems/two-sum/
+//https://github.com/qingliaowu/LeetCodeAnimation/blob/master/0001-Two-Sum/Article/0001-Two-Sum.md
 public class TwoSum1 {
 
     public static void main(String[] args) {
