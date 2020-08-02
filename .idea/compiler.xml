@@ -16,7 +16,7 @@
     <bytecodeTargetLevel target="11">
       <module name="Algorithms" target="1.5" />
       <module name="DataStructure" target="1.5" />
-      <module name="JavaCode" target="1.5" />
+      <module name="JavaCode" target="1.11" />
       <module name="LeetcodeAlgo" target="1.11" />
     </bytecodeTargetLevel>
   </component>
