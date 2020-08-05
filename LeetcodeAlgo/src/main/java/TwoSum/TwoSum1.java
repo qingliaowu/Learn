@@ -33,5 +33,10 @@ public class TwoSum1 {
         }
         throw new IllegalArgumentException("No two sum solution");
     }
+/*
+This is a Brute Force approach
+Time complexity O(n^2) : For each element, we try to find its complement by looping through the rest of array which takes O(n) time.
+Space complexity O(1)
 
+ */
 }
