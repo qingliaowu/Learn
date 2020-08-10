@@ -23,7 +23,7 @@ public class TwoSum2 {
 
     public int[] twoSum(int[] nums, int target) {
 
-        return [0,1]
+
 
     }
 }
