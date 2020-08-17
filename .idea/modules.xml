@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/DataStructure/DataStructure.iml" filepath="$PROJECT_DIR$/DataStructure/DataStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaCode/JavaCode.iml" filepath="$PROJECT_DIR$/JavaCode/JavaCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/LeetcodeAlgo/LeetcodeAlgo.iml" filepath="$PROJECT_DIR$/LeetcodeAlgo/LeetcodeAlgo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cc189/cc189.iml" filepath="$PROJECT_DIR$/cc189/cc189.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/leetcode.iml" filepath="$PROJECT_DIR$/.idea/leetcode.iml" />
     </modules>
   </component>

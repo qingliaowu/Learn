@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="DataStructure" />
         <module name="JavaCode" />
+        <module name="cc189" />
         <module name="Algorithms" />
         <module name="LeetcodeAlgo" />
         <module name="JavaPractive" />
@@ -15,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel target="11">
       <module name="Algorithms" target="1.11" />
+      <module name="cc189" target="1.5" />
       <module name="DataStructure" target="1.11" />
       <module name="JavaCode" target="1.11" />
       <module name="LeetcodeAlgo" target="1.11" />
