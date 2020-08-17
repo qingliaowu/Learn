@@ -8,3 +8,4 @@ https://www.youtube.com/watch?v=v4cd1O4zkGw
 
 4. Drop non-dominate terms
 
+O(1) < O(log n) < O(n) < O(nlogn) < O(n^2) < O(2^n) < O(n!)
