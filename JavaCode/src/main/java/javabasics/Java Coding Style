@@ -1,0 +1,34 @@
+https://google.github.io/styleguide/javaguide.html#s1-introduction
+
+
+1 Introduction
+This document serves as the complete definition of Google's coding standards for source code in the Java™ Programming Language.
+ A Java source file is described as being in Google Style if and only if it adheres to the rules herein.
+
+Like other programming style guides, the issues covered span not only aesthetic issues of formatting,
+but other types of conventions or coding standards as well. However, this document focuses primarily on the hard-and-fast rules
+that we follow universally, and avoids giving advice that isn't clearly enforceable (whether by human or tool).
+
+1.1 Terminology notes
+In this document, unless otherwise clarified:
+
+The term class is used inclusively to mean an "ordinary" class, enum class, interface or annotation type (@interface).
+The term member (of a class) is used inclusively to mean a nested class, field, method, or constructor; that is, all top-level contents of a class except initializers and comments.
+The term comment always refers to implementation comments. We do not use the phrase "documentation comments", instead using the common term "Javadoc."
+Other "terminology notes" will appear occasionally throughout the document.
+
+
+1.2 Guide notes
+Example code in this document is non-normative. That is, while the examples are in Google Style, they may not illustrate the only stylish way to represent the code. Optional formatting choices made in examples should not be enforced as rules.
+
+
+2 Source file basics
+
+2.1 File name
+The source file name consists of the case-sensitive name of the top-level class it contains (of which there is exactly one), plus the .java extension.
+
+2.2 File encoding: UTF-8
+Source files are encoded in UTF-8.
+
+----------------------8/26/2020-----------------------
+
