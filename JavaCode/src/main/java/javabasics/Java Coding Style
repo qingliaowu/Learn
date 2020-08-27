@@ -30,5 +30,70 @@ The source file name consists of the case-sensitive name of the top-level class 
 2.2 File encoding: UTF-8
 Source files are encoded in UTF-8.
 
+
+
 ----------------------8/26/2020-----------------------
 
+2.3 Special characters
+2.3.1 Whitespace characters
+Aside from the line terminator sequence, the ASCII horizontal space character (0x20) is the only whitespace character that appears anywhere in a source file. This implies that:
+
+1. All other whitespace characters in string and character literals are escaped.
+2. Tab characters are not used for indentation.
+
+2.3.2 Special escape sequences
+For any character that has a special escape sequence (\b, \t, \n, \f, \r, \", \' and \\), that sequence is used rather than the corresponding octal (e.g. \012) or Unicode (e.g. \u000a) escape.
+
+Escape sequence \f - form feed - what exactly is it?
+https://stackoverflow.com/questions/4334370/escape-sequence-f-form-feed-what-exactly-is-it
+
+It skips to the start of the next page. (Applies mostly to terminals where the output device is a printer rather than a VDU.)
+
+What's the Use of '\r' escape sequence?
+https://stackoverflow.com/questions/7372918/whats-the-use-of-r-escape-sequence
+ printf("Hey this is my first hello world \r");
+The program is printing "Hey this is my first hello world ", then it is moving the cursor back to the beginning of the line. How this will look on the screen depends on your environment. It appears the beginning of the string is being overwritten by something, perhaps your command line prompt.
+
+2.3.3 Non-ASCII characters
+For the remaining non-ASCII characters, either the actual Unicode character (e.g. ∞) or the equivalent Unicode escape (e.g. \u221e) is used.
+The choice depends only on which makes the code easier to read and understand, although Unicode escapes outside string literals and
+comments are strongly discouraged.
+
+String Literal and String Object
+https://www.geeksforgeeks.org/string-initialization-java-string-literal-vs-string-object/
+
+
+Examples:
+
+Example	Discussion
+String unitAbbrev = "μs";	Best: perfectly clear even without a comment.
+String unitAbbrev = "\u03bcs"; // "μs"	Allowed, but there's no reason to do this.
+String unitAbbrev = "\u03bcs"; // Greek letter mu, "s"	Allowed, but awkward and prone to mistakes.
+String unitAbbrev = "\u03bcs";	Poor: the reader has no idea what this is.
+return '\ufeff' + content; // byte order mark	Good: use escapes for non-printable characters, and comment if necessary.
+Tip: Never make your code less readable simply out of fear that some programs might not handle non-ASCII characters properly. If that should happen, those programs are broken and they must be fixed.
+
+3 Source file structure
+A source file consists of, in order:
+
+License or copyright information, if present
+Package statement
+Import statements
+Exactly one top-level class
+* Exactly one blank line separates each section that is present.
+
+3.1 License or copyright information, if present
+If license or copyright information belongs in a file, it belongs here.
+
+3.2 Package statement
+The package statement is not line-wrapped. The column limit (Section 4.4, Column limit: 100) does not apply to package statements.
+
+
+3.3 Import statements
+
+3.3.1 No wildcard imports
+Wildcard imports, static or otherwise, are not used.
+
+
+
+----------------------8/27/2020-----------------------
