@@ -94,6 +94,7 @@ The package statement is not line-wrapped. The column limit (Section 4.4, Column
 3.3.1 No wildcard imports
 Wildcard imports, static or otherwise, are not used.
 
-
+3.3.2 No line-wrapping
+Import statements are not line-wrapped. The column limit (Section 4.4, Column limit: 100) does not apply to import statements.
 
 ----------------------8/27/2020-----------------------
