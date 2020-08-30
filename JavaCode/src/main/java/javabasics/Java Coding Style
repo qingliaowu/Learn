@@ -109,4 +109,6 @@ Within each block the imported names appear in ASCII sort order. (Note: this is 
 https://jackie880823.gitbooks.io/google-java-style/content/3.3.3%20Ordering%20and%20spacing.html
 3.3.4 No static import for classes
 Static import is not used for static nested classes. They are imported with normal imports.
+
+
 ----------------------8/29/2020-----------------------
