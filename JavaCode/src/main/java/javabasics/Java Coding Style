@@ -112,3 +112,26 @@ Static import is not used for static nested classes. They are imported with norm
 
 
 ----------------------8/29/2020-----------------------
+
+3.4 Class declaration
+3.4.1 Exactly one top-level class declaration
+Each top-level class resides in a source file of its own.
+
+3.4.2 Ordering of class contents
+
+The order you choose for the members and initializers of your class can have a great effect on learnability. However, there's no single correct recipe for how to do it; different classes may order their contents in different ways.
+
+What is important is that each class uses some logical order, which its maintainer could explain if asked. For example, new methods are not just habitually added to the end of the class, as that would yield "chronological by date added" ordering, which is not a logical ordering.
+
+
+3.4.2.1 Overloads: never split
+When a class has multiple constructors, or multiple methods with the same name, these appear sequentially, with no other code in between (not even private members).
+
+4 Formatting
+Terminology Note: block-like construct refers to the body of a class, method or constructor. Note that, by Section 4.8.3.1 on array initializers, any array initializer may optionally be treated as if it were a block-like construct.
+
+4.1 Braces
+4.1.1 Braces are used where optional
+Braces are used with if, else, for, do and while statements, even when the body is empty or contains only a single statement.
+----------------------8/30/2020-----------------------
+
