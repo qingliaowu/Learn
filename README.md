@@ -1,2 +1,1 @@
-# leetcode
-This repository will be something for leetcode with related knowledges.
+# To learn java related stuff
