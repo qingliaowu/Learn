@@ -134,7 +134,40 @@ Terminology Note: block-like construct refers to the body of a class, method or 
 4.1.1 Braces are used where optional
 Braces are used with if, else, for, do and while statements, even when the body is empty or contains only a single statement.
 ----------------------8/30/2020-----------------------
+4.1.2 Nonempty blocks: K & R style
+Braces follow the Kernighan and Ritchie style ("Egyptian brackets") for nonempty blocks and block-like constructs:
 
+No line break before the opening brace.
+Line break after the opening brace.
+Line break before the closing brace.
+Line break after the closing brace, only if that brace terminates a statement or terminates the body of a method, constructor, or named class. For example, there is no line break after the brace if it is followed by else or a comma.
 
 
 ----------------8/31/2020-----------------------
+
+Examples:
+
+return () -> {
+  while (condition()) {
+    method();
+  }
+};
+
+return new MyClass() {
+  @Override public void method() {
+    if (condition()) {
+      try {
+        something();
+      } catch (ProblemException e) {
+        recover();
+      }
+    } else if (otherCondition()) {
+      somethingElse();
+    } else {
+      lastThing();
+    }
+  }
+};
+A few exceptions for enum classes are given in Section 4.8.1, Enum classes.
+
+----------------9/10/2020-----------------------
