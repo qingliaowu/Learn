@@ -29,7 +29,7 @@ public class Calculator {
 
         Calculator myCalculator = new Calculator();
 
-        System
+        myCalculator.add(1,2);
 
 
     }
