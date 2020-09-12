@@ -24,7 +24,6 @@ public class SavingsAccount {
         System.out.println("Hello!");
         System.out.println("Your balance is "+savings.balance);
 
-
         //Deposit:
         int afterDeposit = savings.balance + 600;
         savings.balance = afterDeposit;
