@@ -1,13 +1,16 @@
 package javabasics;
 
 public class CarLoan {
-    public static int carLoan = 10000;
-    public static int loanLength = 3; //3 years
-    public static int interestRate = 5; //an interest rate of 5% on the loan
-    static int downPayment = 2000;
+    int carLoan = 10000;
+    int loanLength = 3; //3 years
+    int interestRate = 5; //an interest rate of 5% on the loan
+    int downPayment = 2000;
 
-
-    public static void main(String[] args) {
+    public CarLoan(int carLoan, int loanLength, int interestRate,int downPayment){
+        this.carLoan = carLoan;
+        this.loanLength = loanLength;
+        this.interestRate = interestRate;
+        this.downPayment = downPayment;
 
         if(loanLength <= 0){
             System.out.println("Error! You must take out a valid car loan.");
@@ -21,5 +24,11 @@ public class CarLoan {
             int monthlyPayment = monthlyBalance + interest;
             System.out.println(monthlyPayment);
         }
+    }
+
+    public static void main(String[] args) {
+
+        CarLoan carLoan = new CarLoan(10000, 3, 5, 2000);
+
     }
 }
