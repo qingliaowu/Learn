@@ -1,5 +1,7 @@
 package javabasics;
 
+import java.util.Arrays;
+
 public class Newsfeed {
 
 
