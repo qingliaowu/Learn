@@ -16,11 +16,11 @@ public class Newsfeed {
     }
 
     public String getTopTopic(){
-
+        return topics[0];
     }
 
     public void viewTopic(int topicIndex){
-
+        views[topicIndex] = views[topicIndex] + 1;
     }
 
     public static void main(String[] args){
@@ -36,5 +36,6 @@ public class Newsfeed {
         sampleFeed.viewTopic(1);
 
         System.out.println("The " + sampleFeed.topics[1] + " topic has been viewed " + sampleFeed.views[1] + " times!");
+
     }
 }
