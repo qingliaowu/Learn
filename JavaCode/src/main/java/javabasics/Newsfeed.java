@@ -16,7 +16,7 @@ public class Newsfeed {
     }
 
     public int getNumTopics(){
-
+        return topics.length;
     }
 
     public static void main(String[] args){
