@@ -18,7 +18,7 @@ public class Newsfeed {
             String[] humanTopics = {"Politics", "Science", "Sports", "Love"};
             feed = new Newsfeed(humanTopics);
 
-        } else if(_____________) {
+        } else if(args[0].equals("Robot")) {
 
             //topics for a Robot feed:
             String[] robotTopics = {"Oil", "Parts", "Algorithms", "Love"};
