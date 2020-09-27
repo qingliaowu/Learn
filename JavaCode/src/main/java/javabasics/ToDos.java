@@ -6,21 +6,29 @@ class ToDos {
 
     public static void main(String[] args) {
 
-        ArrayList<String> toDoList = new ArrayList<String>();
-        String toDo1 = "Water plants";
-        // Add more to-dos here:
-        String toDo2 = "task2";
-        String toDo3 = "Task3";
+        // Sherlock
+        ArrayList<String> sherlocksToDos = new ArrayList<String>();
+
+        sherlocksToDos.add("visit the crime scene");
+        sherlocksToDos.add("play violin");
+        sherlocksToDos.add("interview suspects");
+        sherlocksToDos.add("solve the case");
+        sherlocksToDos.add("apprehend the criminal");
+
+        // Poirot
+        ArrayList<String> poirotsToDos = new ArrayList<String>();
+
+        poirotsToDos.add("visit the crime scene");
+        poirotsToDos.add("interview suspects");
+        poirotsToDos.add("let the little grey cells do their work");
+        poirotsToDos.add("trim mustache");
+        poirotsToDos.add("call all suspects together");
+        poirotsToDos.add("reveal the truth of the crime");
+
+        // Print the size of each ArrayList below:
 
 
-        // Add to-dos to toDoList
-
-        toDoList.add(toDo1);
-        toDoList.add(toDo2);
-        toDoList.add(toDo3);
-
-        System.out.println(toDoList);
-
+        // Print the name of the detective with the larger to-do list:
 
     }
 
