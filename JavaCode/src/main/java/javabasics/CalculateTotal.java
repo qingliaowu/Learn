@@ -15,7 +15,9 @@ class CalculateTotal {
         double total = 0;
 
         // Iterate over expenses
+        for(int i = 0; i < expenses.size(); i++){
 
+        }
 
         System.out.println(total);
 
