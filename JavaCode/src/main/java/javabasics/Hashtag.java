@@ -7,6 +7,7 @@ public class Hashtag {
         String hashtag = "#100DaysOfCode";
 
         // Make the hashtag lowercase:
+        System.out.println(hashtag.toLowerCase());
 
 
     }
