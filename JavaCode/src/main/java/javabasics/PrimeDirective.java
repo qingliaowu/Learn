@@ -3,7 +3,6 @@ package javabasics;
 // Import statement:
 import java.util.ArrayList;
 
-
 class PrimeDirective {
 
     // Add your methods here:
@@ -11,19 +10,26 @@ class PrimeDirective {
 
     public boolean isPrime(int number){
 
-        for(int i = 2; i < number; i++){
+        if(number < 2){
+            return false;
+        }else if(number == 2){
+            return true;
+        }else{
 
-            if(number > 1 && number%number == 0){
-                return true;
-            }else
-                return false;
+            for(int i = 2; i < number; i++){
+                if(i%i==0){
+                    return false;
+                }
+            }return true;
         }
+
     }
 
     public static void main(String[] args) {
 
         PrimeDirective pd = new PrimeDirective();
         int[] numbers = {6, 29, 28, 33, 11, 100, 101, 43, 89};
+
     }
 
 }
