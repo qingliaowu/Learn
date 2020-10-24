@@ -7,7 +7,7 @@ public class MorseCode {
         String code = ".... .. / .. .----. -- / ... --- -. -. -.-- / .- -. -.. / .. / .-.. .. -.- . / - --- / . .- - / .-. .- -- . -.";
 
         // Write the code:
-
+        System.out.println(code.indexOf(". .- -"));
 
     }
 
