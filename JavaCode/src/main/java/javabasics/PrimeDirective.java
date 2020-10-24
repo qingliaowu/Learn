@@ -17,7 +17,7 @@ class PrimeDirective {
         }else{
 
             for(int i = 2; i < number; i++){
-                if(i%i==0){
+                if(i%i!=0){
                     return false;
                 }
             }return true;
@@ -30,6 +30,10 @@ class PrimeDirective {
         PrimeDirective pd = new PrimeDirective();
         int[] numbers = {6, 29, 28, 33, 11, 100, 101, 43, 89};
 
+        System.out.println(pd.isPrime(7));
+
+
     }
 
 }
+
