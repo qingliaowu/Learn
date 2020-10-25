@@ -3,7 +3,9 @@ package javabasics;
 class Noodle {
 
     double lengthInCentimeters;
+    double widthInCentimeters;
     String shape;
+    String ingredients;
     String texture = "brittle";
 
     Noodle(double lenInCent, double wthInCent, String shp, String ingr) {
@@ -25,7 +27,7 @@ class Noodle {
 
         Spaghetti spaghettiPomodoro = new Spaghetti();
 
-        System.out.println(spaghettiPomodoro.texture);
+        System.out.println(spaghettiPomodoro.shape);
 
     }
 
