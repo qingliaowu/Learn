@@ -17,7 +17,7 @@ public class Noodle {
 
     }
 
-    public boolean isTasty() {
+    final public boolean isTasty() {
 
         return true;
 
