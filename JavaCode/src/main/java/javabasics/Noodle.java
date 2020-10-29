@@ -1,12 +1,12 @@
 package javabasics;
 
-public class Noodle {
+class Noodle {
 
-    private double lengthInCentimeters;
-    private double widthInCentimeters;
-    private String shape;
-    String ingredients;
-    private String texture = "brittle";
+    protected double lengthInCentimeters;
+    protected double widthInCentimeters;
+    protected String shape;
+    protected String ingredients;
+    protected String texture = "brittle";
 
     Noodle(double lenInCent, double wthInCent, String shp, String ingr) {
 
@@ -17,17 +17,18 @@ public class Noodle {
 
     }
 
-    final public boolean isTasty() {
+    public void cook() {
 
-        return true;
+        System.out.println("Boiling.");
+
+        this.texture = "cooked";
 
     }
 
     public static void main(String[] args) {
 
-        Ramen yasaiRamen = new Ramen();
-        //System.out.println(yasaiRamen.ingredients);
-        System.out.println(yasaiRamen.isTasty());
+        Spaetzle kaesespaetzle = new Spaetzle();
+        kaesespaetzle.cook();
 
     }
 
