@@ -16,10 +16,23 @@ class Noodle {
         this.ingredients = ingr;
 
     }
+    public String getCookPrep() {
 
-    public void cook() {
+        return "Boil noodle for 7 minutes and add sauce.";
 
-        this.texture = "cooked";
+    }
+
+
+    public static void main(String[] args) {
+
+        Noodle spaghetti, ramen, pho;
+
+        spaghetti = new Spaghetti();
+        ramen = new Ramen();
+        pho = new Pho();
+
+        // Add your code below:
+
 
     }
 
