@@ -32,6 +32,12 @@ class Noodle {
         pho = new Pho();
 
         // Add your code below:
+        Noodle[] allTheNoodles = {spaghetti, ramen, pho};
+
+
+        for(Noodle noodle : allTheNoodles){
+            noodle.getCookPrep();
+        }
 
 
     }
