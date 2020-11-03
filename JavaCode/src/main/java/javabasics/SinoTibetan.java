@@ -1,4 +1,4 @@
 package javabasics;
 
-public class SinoTibetan extends Language {
+public class SinoTibetan {
 }
