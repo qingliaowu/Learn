@@ -1,4 +1,4 @@
-package hashtable;
+package ch1;
 
 //Hashtable
 //O(str),  but it can be O(1) because of the ASCII code
