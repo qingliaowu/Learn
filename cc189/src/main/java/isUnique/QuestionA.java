@@ -1,4 +1,4 @@
-package ch1;
+package isUnique;
 
 //Hashtable
 //O(str),  but it can be O(1) because of the ASCII code
