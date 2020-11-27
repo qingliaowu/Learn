@@ -24,8 +24,8 @@ public class Node {
         Node banana = new Node("Banana-rama");
         Node coconut = new Node("Nuts for Coconut");
 
-
-
+        strawberry.setNextNode(banana);
+        banana.setNextNode(coconut);
 
     }
 
