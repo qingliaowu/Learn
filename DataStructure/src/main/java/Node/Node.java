@@ -3,7 +3,7 @@ package Node;
 public class Node {
 
     public String data;
-    public Node next;
+    private Node next;
 
     public Node(String data) {
         this.data = data;
