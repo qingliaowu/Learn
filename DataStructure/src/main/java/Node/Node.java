@@ -24,6 +24,8 @@ public class Node {
 
         firstNode.setNextNode(secondNode);
         System.out.println(firstNode.next.data);
+
+        System.out.println(firstNode.getNextNode().data);
     }
 
 }
