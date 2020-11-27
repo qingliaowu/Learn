@@ -14,6 +14,10 @@ public class Node {
         this.next = node;
     }
 
+    public Node getNextNode(){
+        return this.next;
+    }
+
     public static void main(String[] args) {
         Node firstNode = new Node("I am a Node!");
         Node secondNode = new Node("I am the second Node!");
