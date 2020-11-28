@@ -27,6 +27,14 @@ public class Node {
         strawberry.setNextNode(banana);
         banana.setNextNode(coconut);
 
+        Node currentNode = strawberry;
+
+        while (currentNode != null) {
+            System.out.println(currentNode.data);
+            currentNode = currentNode.getNextNode();
+        }
+
+
     }
 
 }
