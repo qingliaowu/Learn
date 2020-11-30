@@ -25,6 +25,7 @@ public class LinkedList {
             while(tail.getNextNode() != null){
                 tail = tail.getNextNode();
             }
+            tail.setNextNode(new Node(data));
         }
     }
 
