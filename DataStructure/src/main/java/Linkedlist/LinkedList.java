@@ -35,6 +35,7 @@ public class LinkedList {
         if(removedHead == null){
             return null;
         }
+        this.head = removedHead.getNextNode();
         return removedHead.data;
     }
 
