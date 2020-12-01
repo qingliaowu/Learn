@@ -30,8 +30,14 @@ public class LinkedList {
     }
 
     public String removeHead(){
-        return null;
+        Node removedHead = this.head;
+
+        if(removedHead == null){
+            return null;
+        }
+        return removedHead.data;
     }
+
 
 
     public static void main(String []args) {
