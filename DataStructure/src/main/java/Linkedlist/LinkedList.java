@@ -39,13 +39,15 @@ public class LinkedList {
         return removedHead.data;
     }
 
-    public String printList(){
-
+    public String printList() {
         String output = "<head> ";
         Node currentNode = this.head;
-        while(currentNode != null){
-            output.concat(currentNode.data).concat(" ");
+        while (currentNode != null) {
+            output += currentNode.data + " ";
+            currentNode = currentNode.getNextNode();
         }
+        output += "<tail>";
+        System.out.println(output);
         return output;
     }
 
