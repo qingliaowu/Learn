@@ -2,6 +2,20 @@ package Linkedlist;
 
 public class LinkedList {
 
+    public static void main(String []args) {
+        // Write your code here:
+        LinkedList seasons = new LinkedList();
+
+        seasons.addToHead("summer");
+        seasons.addToHead("spring");
+        seasons.addToTail("fall");
+        seasons.addToTail("winter");
+        seasons.removeHead();
+        seasons.printList();
+
+
+    }
+
     public Node head;
 
     public LinkedList() {
@@ -22,17 +36,16 @@ public class LinkedList {
         if (tail == null) {
             this.head = new Node(data);
         } else {
-            while(tail.getNextNode() != null){
+            while (tail.getNextNode() != null) {
                 tail = tail.getNextNode();
             }
             tail.setNextNode(new Node(data));
         }
     }
 
-    public String removeHead(){
+    public String removeHead() {
         Node removedHead = this.head;
-
-        if(removedHead == null){
+        if (removedHead == null) {
             return null;
         }
         this.head = removedHead.getNextNode();
@@ -51,12 +64,5 @@ public class LinkedList {
         return output;
     }
 
-
-
-
-
-    public static void main(String []args) {
-
-    }
 
 }
