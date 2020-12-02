@@ -43,6 +43,9 @@ public class LinkedList {
 
         String output = "<head> ";
         Node currentNode = this.head;
+        while(currentNode != null){
+            output.concat(currentNode.data).concat(" ");
+        }
         return output;
     }
 
