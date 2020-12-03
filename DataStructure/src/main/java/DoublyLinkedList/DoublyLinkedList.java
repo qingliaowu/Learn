@@ -38,6 +38,13 @@ public class DoublyLinkedList {
 
     }
 
+    public void addToTail(String data){
+        Node newTail = new Node(data);
+        Node currentTail = this.tail;
+
+
+    }
+
     public static void main(String[] args) {
 
     }
