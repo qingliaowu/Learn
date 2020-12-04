@@ -52,6 +52,10 @@ public class DoublyLinkedList {
 
 
     }
+
+    public String removeHead(){
+        return null;
+    }
     public static void main(String[] args) {
 
     }
