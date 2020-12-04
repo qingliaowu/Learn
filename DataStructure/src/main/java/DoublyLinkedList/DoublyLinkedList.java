@@ -54,7 +54,18 @@ public class DoublyLinkedList {
     }
 
     public String removeHead(){
-        return null;
+        Node removedHead = this.head;
+        if(removedHead == null){
+            return null;
+        }
+        this.head = removedHead.getNextNode();
+        if(this.head != null){
+            this.head.setPreviousNode(null);
+        }
+        if(removedHead == this.tail){
+            //this.removeTail();
+        }
+        return removedHead.data;
     }
     public static void main(String[] args) {
 
