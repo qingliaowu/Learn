@@ -90,8 +90,20 @@ public class DoublyLinkedList {
             return null;
         }
 
+        if(nodeToRemove == this.head){
+            this.removeHead();
+        }else if(nodeToRemove == this.tail){
+            this.removeTail();
+        }else{
+            Node nextNode = nodeToRemove.getNextNode();
+            Node previousNode = nodeToRemove.getPreviousNode();
+
+        }
+
+
         return nodeToRemove;
     }
+
 
     public String printList() {
         Node currentNode = this.head;
