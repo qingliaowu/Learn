@@ -10,46 +10,34 @@ public class DoublyLinkedList {
         this.tail = null;
     }
 
-    public String printList() {
-        Node currentNode = this.head;
-        String output = "<head> ";
-        while (currentNode != null) {
-            output += currentNode.data + " ";
-            currentNode = currentNode.getNextNode();
-        }
-        output += "<tail>";
-        System.out.println(output);
-        return output;
-    }
-
-    public void addToHead(String data){
+    public void addToHead(String data) {
         Node newHead = new Node(data);
         Node currentHead = this.head;
 
-        if(currentHead != null){
+        if (currentHead != null) {
             currentHead.setPreviousNode(newHead);
             newHead.setNextNode(currentHead);
         }
-
         this.head = newHead;
-        if(this.tail == null){
+
+        if (this.tail == null) {
             this.tail = newHead;
         }
-
     }
 
-    public void addToTail(String data){
+    public void addToTail(String data) {
         Node newTail = new Node(data);
         Node currentTail = this.tail;
-        if(currentTail != null){
+
+        if (currentTail != null) {
             currentTail.setNextNode(newTail);
             newTail.setPreviousNode(currentTail);
         }
         this.tail = newTail;
-        if(this.head == null){
+
+        if (this.head == null) {
             this.head = newTail;
         }
-
     }
 
     public String removeHead() {
@@ -69,44 +57,55 @@ public class DoublyLinkedList {
         return removedHead.data;
     }
 
-
-    public String removeTail(){
+    public String removeTail() {
         Node removedTail = this.tail;
-        if(removedTail == null){
+
+        if (removedTail == null) {
             return null;
         }
         this.tail = removedTail.getPreviousNode();
-        if (this.tail != null){
+
+        if (this.tail != null) {
             this.tail.setNextNode(null);
         }
-        if(removedTail == this.head){
+        if (removedTail == this.head) {
             this.removeHead();
         }
-
         return removedTail.data;
     }
 
-    public Node removeByData(String data){
-
+    public Node removeByData(String data) {
         Node nodeToRemove = null;
         Node currentNode = this.head;
-        while(currentNode != null){
-            if(currentNode.data == data){
+
+        while (currentNode != null) {
+            if (currentNode.data == data) {
                 nodeToRemove = currentNode;
                 break;
             }
             currentNode = currentNode.getNextNode();
         }
 
-        if(nodeToRemove == null){
+        if (nodeToRemove == null) {
             return null;
         }
 
         return nodeToRemove;
     }
 
+    public String printList() {
+        Node currentNode = this.head;
+        String output = "<head> ";
+        while (currentNode != null) {
+            output += currentNode.data + " ";
+            currentNode = currentNode.getNextNode();
+        }
+        output += "<tail>";
+        System.out.println(output);
+        return output;
+    }
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
 
     }
 
