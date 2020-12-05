@@ -2,6 +2,13 @@ package DoublyLinkedList;
 
 public class DoublyLinkedList {
 
+    public static void main(String[] args) {
+        // Create your subway line here:
+
+
+
+    }
+
     public Node head;
     public Node tail;
 
@@ -89,24 +96,18 @@ public class DoublyLinkedList {
         if (nodeToRemove == null) {
             return null;
         }
-
-        if(nodeToRemove == this.head){
+        if (nodeToRemove == this.head) {
             this.removeHead();
-        }else if(nodeToRemove == this.tail){
+        } else if (nodeToRemove == this.tail) {
             this.removeTail();
-        }else{
+        } else {
             Node nextNode = nodeToRemove.getNextNode();
             Node previousNode = nodeToRemove.getPreviousNode();
             nextNode.setPreviousNode(previousNode);
             previousNode.setNextNode(nextNode);
-
-
         }
-
-
         return nodeToRemove;
     }
-
 
     public String printList() {
         Node currentNode = this.head;
@@ -118,10 +119,6 @@ public class DoublyLinkedList {
         output += "<tail>";
         System.out.println(output);
         return output;
-    }
-
-    public static void main(String[] args) {
-
     }
 
 }
