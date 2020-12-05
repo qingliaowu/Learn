@@ -97,6 +97,9 @@ public class DoublyLinkedList {
         }else{
             Node nextNode = nodeToRemove.getNextNode();
             Node previousNode = nodeToRemove.getPreviousNode();
+            nextNode.setPreviousNode(previousNode);
+            previousNode.setNextNode(nextNode);
+
 
         }
 
