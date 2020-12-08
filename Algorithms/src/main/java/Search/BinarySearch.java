@@ -3,6 +3,9 @@ package Search;
 public class BinarySearch {
     public static int search(int[] arr, int target) {
         // Add left and right variables below
+        int left = 0;
+        int right = arr.length;
+
 
         // Add mid calculation below
 
