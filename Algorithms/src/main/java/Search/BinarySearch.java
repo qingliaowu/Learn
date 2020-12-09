@@ -10,8 +10,16 @@ public class BinarySearch {
         // Add mid calculation below
         int mid = Math.floorDiv(left+right, 2);
 
+        int midValue = arr[mid];
 
-        return mid;
+        if(midValue == target){
+            return mid;
+        }
+
+        // 2. Create a conditional below
+
+        return -1;
+
     }
 
     public static void main(String[] args) {
