@@ -8,8 +8,10 @@ public class BinarySearch {
 
 
         // Add mid calculation below
+        int mid = Math.floorDiv(left+right, 2);
 
-        return -1;
+
+        return mid;
     }
 
     public static void main(String[] args) {
