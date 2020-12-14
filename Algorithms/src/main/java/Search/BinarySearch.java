@@ -11,7 +11,11 @@ public class BinarySearch {
 
             if (midValue == target) {
                 return mid;
-            } // Add else if and else blocks:
+            }else if {
+                // Add else if and else blocks:
+            }else {
+
+            }
 
         }
 
