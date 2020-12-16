@@ -5,7 +5,7 @@ public class BinarySearch {
         int left = 0;
         int right = arr.length;
 
-        while(1) {
+        while(right > left) {
             int mid = Math.floorDiv(left + right, 2);
             int midValue = arr[mid];
 
