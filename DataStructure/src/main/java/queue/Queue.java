@@ -18,11 +18,11 @@ public class Queue {
     }
 
     public static void main(String[] args) {
-      /*
+
       Queue queueOne = new Queue(10);
       System.out.println("queueOne can have "+ queueOne.maxSize + " nodes!");
       Queue queueTwo = new Queue();
       System.out.println("queueTwo can have "+ queueTwo.maxSize + " nodes!");
-      */
+
     }
 }
