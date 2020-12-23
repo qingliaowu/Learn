@@ -12,17 +12,20 @@ public class Queue {
     }
 
     public Queue(int maxSize){
-        this.maxSize = maxSize;
         this.queue = new LinkedList();
         this.size = 0;
+        this.maxSize = maxSize;
     }
 
+    // Define enqueue() below
+
     public static void main(String[] args) {
-
-      Queue queueOne = new Queue(10);
-      System.out.println("queueOne can have "+ queueOne.maxSize + " nodes!");
-      Queue queueTwo = new Queue();
-      System.out.println("queueTwo can have "+ queueTwo.maxSize + " nodes!");
-
+    /*
+      Queue coffeeOrder = new Queue();
+      System.out.println("coffeeOrder queue has " + coffeeOrder.size + " orders.");
+      coffeeOrder.enqueue("latte");
+      coffeeOrder.enqueue("espresso");
+      coffeeOrder.enqueue("cappuccino");
+    */
     }
 }
