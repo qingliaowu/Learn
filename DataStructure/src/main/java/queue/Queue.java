@@ -12,7 +12,9 @@ public class Queue {
     }
 
     public Queue(int maxSize){
-
+        this.maxSize = maxSize;
+        this.queue = new LinkedList();
+        this.size = 0;
     }
 
     public static void main(String[] args) {
