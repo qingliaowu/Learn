@@ -19,6 +19,14 @@ public class Queue {
 
     // Define enqueue() below
 
+    public void enqueue(String data){
+        LinkedList linkedList = new LinkedList();
+        Node a = new Node(data);
+
+
+
+    }
+
     public static void main(String[] args) {
     /*
       Queue coffeeOrder = new Queue();
